@@ -1,101 +1,160 @@
-/* Reset and Basic Styles */
+/* Apply App Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    color: #443a19;
+    background-image: url('/static/images/wood-4565399_1280.png'), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header */
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: rgba(68, 58, 25, 0.9);
+    color: #fdfae7;
+    text-align: center;
     padding: 50px 20px;
+    border-bottom: 5px solid #00796B;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Call-To-Action Button */
 .cta-button {
     display: inline-block;
-    background-color: #e74c3c;
+    background-color: #00796B;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2em;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #00a896;
+    transform: scale(1.05);
 }
 
 /* Features Section */
 .features {
-    background: white;
-    padding: 50px 20px;
+    background: rgba(253, 250, 231, 0.95);
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .feature-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .feature {
-    max-width: 400px;
+    max-width: 300px;
     padding: 20px;
-    background: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fdfae7;
+    border-radius: 12px;
+    box-shadow: inset 2px 2px 10px 3px rgba(117, 86, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: #00796B;
 }
 
 /* Signup Section */
 .signup {
-    background: #3498db;
+    background: #00796B;
     color: white;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .signup input {
-    padding: 10px;
-    width: 250px;
+    padding: 12px;
+    width: 300px;
     border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fdfae7;
+    color: #443a19;
+    text-align: center;
+    font-weight: bold;
+}
+
+.signup input:focus {
+    background-color: #ffee80;
+    outline: none;
 }
 
 .signup button {
-    padding: 10px 20px;
-    background: #2ecc71;
+    padding: 12px 20px;
+    background: #f34500;
     border: none;
     color: white;
     font-size: 1.1em;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
 .signup button:hover {
-    background: #27ae60;
+    background: #d84315;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #443a19;
     color: white;
     padding: 20px;
     font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 80%;
+    }
+
+    .signup input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
 }
