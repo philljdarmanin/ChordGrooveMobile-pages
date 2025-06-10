@@ -1,10 +1,10 @@
 /* Apply App Styling */
 body {
-    font-family: 'Merienda', cursive;
+    font-family: 'Merienda';
     font-weight: bold;
     letter-spacing: 1.2px;
     font-size: 16px;
-    color: #443a19;
+    color: #893D0B;
     background-image: url('/static/images/wood-4565399_1280.png'), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgba(68, 58, 25, 0.9);
+    background-color: #893D0B;
     color: #fdfae7;
     text-align: center;
     padding: 50px 20px;
@@ -106,7 +106,7 @@ h3 {
     border-radius: 6px;
     font-size: 1em;
     background-color: #fdfae7;
-    color: #443a19;
+    color: #893D0B;
     text-align: center;
     font-weight: bold;
 }
@@ -134,7 +134,7 @@ h3 {
 
 /* Footer */
 footer {
-    background: #443a19;
+    background: #893D0B;
     color: white;
     padding: 20px;
     font-size: 0.9em;
