@@ -1,159 +1,113 @@
-/* Apply App Styling */
+/* Chord Groove 2025 web refresh */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+
+:root {
+  --wood: #893D0B;
+  --cream: #fdfae7;
+  --cream-dark: #e8deb8;
+  --aqua: #00796b;
+  --aqua-light: #00a896;
+  --purple: #8e44ad;
+  --green: #2e8b57;
+  --orange: #d84315;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+* { box-sizing: border-box; }
+
 body {
-    font-family: 'Merienda_700Bold';
-    letter-spacing: 1.2px;
-    font-size: 16px;
-    color: #893D0B;
-    background-image: url('/static/images/wood-4565399_1280.png'), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'Merienda', cursive;
+  letter-spacing: 1.2px;
+  color: var(--wood);
+  background:
+    url("/static/images/icon-background.png") center/cover no-repeat,
+    linear-gradient(var(--cream) 75%, var(--cream) 100%);
+  background-blend-mode: overlay;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Header */
-header {
-    background-color: #893D0B;
-    color: #fdfae7;
-    text-align: center;
-    padding: 50px 20px;
-    border-bottom: 5px solid #00796B;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    width: 100%;
+/* ----- Universal Card ----- */
+.card {
+  width: 100%;
+  max-width: 1080px;
+  background: var(--cream);
+  border-radius: 14px;
+  box-shadow: inset 0 2px 6px var(--shadow), 0 4px 12px var(--shadow);
+  padding: 32px 26px;
+  margin: 32px 16px;
+  text-align: center;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+/* Typography */
+h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: 2px; }
+h2 { font-size: 28px; margin: 0 0 24px; }
+h3 { font-size: 22px; color: var(--aqua); margin: 12px 0; }
+p  { font-size: 18px; line-height: 1.5; margin: 0 auto 16px; max-width: 700px; }
 
-p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Call-To-Action Button */
-.cta-button {
-    display: inline-block;
-    background-color: #00796B;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button:hover {
-    background-color: #00a896;
-    transform: scale(1.05);
-}
-
-/* Features Section */
-.features {
-    background: rgba(253, 250, 231, 0.95);
-    padding: 60px 20px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.feature-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.feature {
-    max-width: 300px;
-    padding: 20px;
-    background: #fdfae7;
-    border-radius: 12px;
-    box-shadow: inset 2px 2px 10px 3px rgba(117, 86, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-}
-
-h3 {
-    color: #00796B;
-}
-
-/* Signup Section */
-.signup {
-    background: #00796B;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    width: 100%;
-}
-
-.signup input {
-    padding: 12px;
-    width: 300px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    background-color: #fdfae7;
-    color: #893D0B;
-    text-align: center;
-    font-weight: bold;
-}
-
-.signup input:focus {
-    background-color: #ffee80;
-    outline: none;
-}
-
+/* CTA buttons */
+.cta-button,
 .signup button {
-    padding: 12px 20px;
-    background: #f34500;
-    border: none;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s;
+  display: inline-block;
+  background: var(--aqua);
+  color: var(--cream);
+  padding: 14px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+}
+.cta-button:hover,
+.signup button:hover { background: var(--aqua-light); transform: translateY(-2px); }
+
+/* Feature grid */
+.features .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+.feature {
+  flex: 1 1 220px;
+  max-width: 280px;
+  background: var(--cream-dark);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 4px var(--shadow);
+  padding: 20px;
 }
 
-.signup button:hover {
-    background: #d84315;
-    transform: scale(1.05);
+/* Signup form */
+.signup input[type="email"] {
+  padding: 12px 16px;
+  width: 280px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
+.signup button { border-radius: 0 8px 8px 0; }
 
 /* Footer */
 footer {
-    background: #893D0B;
-    color: white;
-    padding: 20px;
-    font-size: 0.9em;
-    text-align: center;
-    width: 100%;
+  width: 100%;
+  background: var(--wood);
+  color: var(--cream);
+  padding: 16px;
+  font-size: 14px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .feature-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-button {
-        width: 80%;
-    }
-
-    .signup input {
-        width: 90%;
-        margin-bottom: 10px;
-    }
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 24px; }
+  .feature-list { flex-direction: column; }
+  .signup input { width: 70vw; margin-bottom: 12px; border-radius: 8px; }
+  .signup button { border-radius: 8px; }
 }
