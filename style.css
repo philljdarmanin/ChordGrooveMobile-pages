@@ -18,8 +18,7 @@ body {
 header {
     background-color: #893D0B;
     background:
-        url("/static/images/icon-background.png") center/cover no-repeat,
-        linear-gradient(var(--cream) 75%, var(--cream) 100%);
+        url("static/images/icon-background.png") center/cover no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
