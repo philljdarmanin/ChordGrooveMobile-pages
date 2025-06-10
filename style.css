@@ -6,12 +6,6 @@ body {
     letter-spacing: 1.2px;
     font-size: 16px;
     color: #893D0B;
-    background:
-        url("/static/images/icon-background.png") center/cover no-repeat,
-        linear-gradient(var(--cream) 75%, var(--cream) 100%);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -23,6 +17,12 @@ body {
 /* Header */
 header {
     background-color: #893D0B;
+    background:
+        url("/static/images/icon-background.png") center/cover no-repeat,
+        linear-gradient(var(--cream) 75%, var(--cream) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     color: #fdfae7;
     text-align: center;
     padding: 50px 20px;
