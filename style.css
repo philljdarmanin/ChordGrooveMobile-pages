@@ -137,6 +137,11 @@ h3 {
 /* Footer */
 footer {
     background: #893D0B;
+    background:
+        url("static/images/icon-background.png") center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     color: white;
     padding: 20px;
     font-size: 0.9em;
