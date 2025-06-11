@@ -25,7 +25,7 @@ header {
     color: #fdfae7;
     text-align: center;
     padding: 50px 20px;
-    border-bottom: 5px solid #66D3D3;
+    border-bottom: 5px solid #006666;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
 }
@@ -44,7 +44,7 @@ p {
 /* Call-To-Action Button */
 .cta-button {
     display: inline-block;
-    background-color: #66D3D3;
+    background-color: #006666;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -55,7 +55,7 @@ p {
 }
 
 .cta-button:hover {
-    background-color: #00a896;
+    background-color: #006666;
     transform: scale(1.05);
 }
 
@@ -89,12 +89,12 @@ p {
 }
 
 h3 {
-    color: #66D3D3;
+    color: #006666;
 }
 
 /* Signup Section */
 .signup {
-    background: #66D3D3;
+    background: #006666;
     color: white;
     padding: 60px 20px;
     text-align: center;
