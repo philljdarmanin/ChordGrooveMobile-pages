@@ -1,167 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
-
-/* Apply App Styling */
-body {
-    font-family: 'Merienda', cursive;
-    letter-spacing: 1.2px;
-    font-size: 16px;
-    color: #893D0B;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+:root {
+  --wood: #5b3417;
+  --cream: #f8f3e7;
+  --panel: rgba(255,255,255,0.88);
+  --text: #2b2117;
+  --muted: #6b6258;
+  --teal: #00796b;
+  --green: #2e8b57;
+  --shadow: 0 10px 24px rgba(0,0,0,0.12);
+  --radius: 22px;
 }
 
-/* Header */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(91,52,23,.45), rgba(91,52,23,.45)),
+    url("static/images/icon-background.png") center/cover fixed no-repeat;
+}
+
+/* Shared container */
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+/* Header / nav */
 header {
-    background-color: #893D0B;
-    background:
-        url("static/images/icon-background.png") center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    color: #fdfae7;
-    text-align: center;
-    padding: 50px 20px;
-    border-bottom: 5px solid #006666;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    width: 100%;
+  padding: 30px 0;
+}
+
+.brand {
+  font-family: 'Merienda', cursive;
+  font-size: 2.4rem;
+  color: white;
+}
+
+/* Shared panels */
+.panel,
+.section,
+.card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin-top: 0;
 }
 
 h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Call-To-Action Button */
-.cta-button {
-    display: inline-block;
-    background-color: #006666;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button:hover {
-    background-color: #006666;
-    transform: scale(1.05);
-}
-
-/* Features Section */
-.features {
-    background: rgba(253, 250, 231, 0.95);
-    padding: 60px 20px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.feature-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.feature {
-    max-width: 300px;
-    padding: 20px;
-    background: #fdfae7;
-    border-radius: 12px;
-    box-shadow: inset 2px 2px 10px 3px rgba(117, 86, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
+h2 {
+  color: var(--teal);
+  font-size: 2rem;
 }
 
 h3 {
-    color: #006666;
+  color: var(--green);
 }
 
-/* Signup Section */
-.signup {
-    background: #006666;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    width: 100%;
+p, li {
+  line-height: 1.7;
+  color: var(--muted);
 }
 
-.signup input {
-    padding: 12px;
-    width: 300px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    background-color: #fdfae7;
-    color: #893D0B;
-    text-align: center;
-    font-weight: bold;
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 700;
 }
 
-.signup input:focus {
-    background-color: #ffee80;
-    outline: none;
+.btn-primary {
+  background: var(--teal);
+  color: white;
 }
 
-.signup button {
-    padding: 12px 20px;
-    background: #f34500;
-    border: none;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s;
+.btn-secondary {
+  background: white;
+  color: var(--text);
 }
 
-.signup button:hover {
-    background: #d84315;
-    transform: scale(1.05);
+/* Cards grid */
+.cards,
+.steps {
+  display: grid;
+  gap: 24px;
+}
+
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.steps {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Footer */
 footer {
-    background: #893D0B;
-    background:
-        url("static/images/icon-background.png") center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    color: white;
-    padding: 20px;
-    font-size: 0.9em;
-    text-align: center;
-    width: 100%;
+  background: rgba(30,20,10,.75);
+  color: white;
+  padding: 28px 0;
+  margin-top: 60px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .feature-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-button {
-        width: 80%;
-    }
-
-    .signup input {
-        width: 90%;
-        margin-bottom: 10px;
-    }
+/* Responsive */
+@media (max-width: 900px) {
+  .cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
 }

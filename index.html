@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chord Groove - Master Your Chords</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap"
-        rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chord Groove</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merienda:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Chord Groove</h1>
-        <p>The best way to create, practice and master your chords.</p>
-    </header>
+  <header>
+    <div class="container nav">
+      <div class="brand">Chord Groove</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="instructions.html">Instructions</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="features">
-        <h2>Why Chord Groove?</h2>
-        <div class="feature-list">
-            <div class="feature">
-                <h3>🎸 Create Chord Progressions</h3>
-                <p>Generate modal progressions in any key.</p>
-            </div>
-            <div class="feature">
-                <h3>🎵 Add Your Favourite Groove</h3>
-                <p>Easily create a strumming pattern to suit your style.</p>
-            </div>
-            <div class="feature">
-                <h3>🎵 Play Along</h3>
-                <p>Choose a progression and a groove, and play it back.</p>
-            </div>
-            <div class="feature">
-                <h3>📱 On-the-Go Learning</h3>
-                <p>Practice anywhere, anytime with our mobile-friendly interface.</p>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="panel">
+          <h1>Build progressions.<br><span class="accent">Add groove.</span><br>Play instantly.</h1>
+          <p class="sub">Chord Groove helps guitarists quickly create chord progressions, match them with strumming grooves, and practice in time with beautiful, distraction-free playback.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#how">See how it works</a>
+            <a class="btn btn-secondary" href="instructions.html">Instructions</a>
+          </div>
         </div>
+        <div>
+          <img class="phone-shot" src="static/images/app-screenshot.png" alt="Chord Groove app screenshot" />
+        </div>
+      </div>
     </section>
 
-    <section id="signup" class="signup">
-        <h2>Stay Updated!</h2>
-        <p>Sign up to be the first to know when Chord Groove launches.</p>
-        <form action="https://formspree.io/f/movjkzzj" method="POST" accept-charset="UTF-8">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit" class="cta-button">Notify Me</button>
-        </form>
+    <section id="features" class="container">
+      <h2 class="section-title">Why Chord Groove?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Create fast</h3>
+          <p>Choose key, mode, chord count, and generate musical progressions in seconds.</p>
+        </div>
+        <div class="card">
+          <h3>Design grooves</h3>
+          <p>Build strumming patterns that match your rhythm and save your favourites.</p>
+        </div>
+        <div class="card">
+          <h3>Practice in time</h3>
+          <p>Use BPM playback to hear chord changes and groove timing exactly as you play.</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Chord Groove. All rights reserved. |
-           <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
-        </p>
-    </footer>
+    <section id="how" class="container">
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="card">
+          <div class="step-number">1</div>
+          <h3>Choose your harmony</h3>
+          <p>Select your mode, key, and chord count from the Chords tab.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">2</div>
+          <h3>Add a groove</h3>
+          <p>Create or edit a strumming groove that fits the feel you want.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">3</div>
+          <h3>Press play</h3>
+          <p>Choose BPM, start playback, and lock in your timing while practicing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 Chord Groove</div>
+      <div style="margin-top:10px;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="mailto:support@chordgroove.app">Support</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
