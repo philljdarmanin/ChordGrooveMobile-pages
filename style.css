@@ -18,9 +18,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  background:
-    linear-gradient(rgba(91,52,23,.45), rgba(91,52,23,.45)),
-    url("static/images/icon-background.png") center/cover fixed no-repeat;
+  background: var(--cream);
 }
 
 /* Shared container */
@@ -58,6 +56,12 @@ header {
   margin-bottom: 32px;
 }
 
+.section-title {
+  color: var(--text);
+  margin-bottom: 28px;
+  font-size: 2rem;
+}
+
 /* Typography */
 h1, h2, h3 {
   margin-top: 0;
@@ -93,6 +97,10 @@ p, li {
 .section p,
 .section ul {
   margin-bottom: 18px;
+}
+
+.instructions-page {
+  padding-top: 40px;
 }
 
 /* Buttons */
