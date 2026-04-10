@@ -50,8 +50,12 @@ header {
   box-shadow: var(--shadow);
 }
 
-section {
+.page-section {
   padding: 80px 0;
+}
+
+.section {
+  margin-bottom: 32px;
 }
 
 /* Typography */
@@ -75,6 +79,20 @@ h3 {
 p, li {
   line-height: 1.7;
   color: var(--muted);
+}
+
+.section h2 {
+  margin-bottom: 16px;
+}
+
+.section h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.section p,
+.section ul {
+  margin-bottom: 18px;
 }
 
 /* Buttons */
@@ -136,11 +154,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 32px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 56px;
+  align-items: center;
 }
 
 .phone-shell {
   position: relative;
-  width: 280px;   /* key change: smaller */
+  width: 260px;   /* key change: smaller */
   max-width: 100%;
   aspect-ratio: 9 / 19;
   padding: 10px;
@@ -181,6 +207,24 @@ footer {
   object-fit: cover;
   object-position: top center;
   display: block;
+}
+
+.store-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.store-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  background: rgba(255,255,255,0.9);
+  color: var(--text);
+  box-shadow: var(--shadow);
 }
 
 /* Responsive */
