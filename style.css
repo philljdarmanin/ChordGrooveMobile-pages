@@ -304,6 +304,7 @@ footer {
   border: 1px solid rgba(43, 33, 23, 0.14);
 }
 
+/* Phone */
 @media (max-width: 900px) {
   .nav {
     flex-direction: column;
@@ -325,5 +326,26 @@ footer {
   .cards,
   .steps {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Hero size and positioning */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-device {
+    padding: 16px 0 0;
+  }
+
+  .phone-shell {
+    width: min(260px, 100%);
+    margin: 0 auto;
+  }
+
+  .panel {
+    padding: 28px;
   }
 }
