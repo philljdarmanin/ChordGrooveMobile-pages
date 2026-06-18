@@ -158,6 +158,20 @@ footer {
   margin-top: 60px;
 }
 
+footer a {
+  color: #ffe8b5;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #ffe8b5;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #ffffff;
+}
+
 .hero-device {
   display: flex;
   justify-content: center;
