@@ -259,27 +259,24 @@ footer a:focus {
   border-bottom: 1px solid rgba(43, 33, 23, 0.08);
 }
 
+.site-header .nav {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+}
+
 .brand-logo-link {
   display: flex;
   align-items: center;
+  height: 86px;
   text-decoration: none;
 }
 
 .brand-logo {
   display: block;
-  height: 56px;
+  height: 100%;
   width: auto;
-  max-width: 460px;
-  filter:
-    drop-shadow(0 2px 2px rgba(0, 0, 0, 0.65))
-    drop-shadow(0 0 2px rgba(0, 0, 0, 0.75));
-}
-
-@media (max-width: 700px) {
-  .brand-logo {
-    height: 36px;
-    max-width: 210px;
-  }
+  object-fit: contain;
 }
 
 .nav {
@@ -295,6 +292,21 @@ footer a:focus {
   color: var(--teal);
   text-decoration: none;
   white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .site-header .nav {
+    min-height: 64px;
+  }
+
+  .brand-logo-link {
+    height: 64px;
+  }
+
+  .brand-logo {
+    height: 100%;
+    max-width: 220px;
+  }
 }
 
 .nav-links {
