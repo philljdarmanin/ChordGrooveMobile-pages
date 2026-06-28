@@ -259,6 +259,26 @@ footer a:focus {
   border-bottom: 1px solid rgba(43, 33, 23, 0.08);
 }
 
+.brand-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  height: 46px;
+  width: auto;
+  max-width: 260px;
+}
+
+@media (max-width: 700px) {
+  .brand-logo {
+    height: 36px;
+    max-width: 210px;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
