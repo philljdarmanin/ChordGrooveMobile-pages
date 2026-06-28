@@ -260,7 +260,7 @@ footer a:focus {
 }
 
 .site-header .nav {
-  min-height: 86px;
+  min-height: 110px;
   display: flex;
   align-items: center;
 }
@@ -268,7 +268,7 @@ footer a:focus {
 .brand-logo-link {
   display: flex;
   align-items: center;
-  height: 86px;
+  height: 110px;
   text-decoration: none;
 }
 
