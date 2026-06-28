@@ -253,7 +253,7 @@ footer a:focus {
   position: sticky;
   top: 0;
   z-index: 50;
-  padding: 5px 0;
+  padding: 18px 0;
   background: #2B1708;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(43, 33, 23, 0.08);
@@ -274,7 +274,7 @@ footer a:focus {
 
 .brand-logo {
   display: block;
-  height: 110px;
+  height: 78px;
   width: auto;
   object-fit: contain;
 }
