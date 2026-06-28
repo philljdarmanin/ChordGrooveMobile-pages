@@ -253,14 +253,14 @@ footer a:focus {
   position: sticky;
   top: 0;
   z-index: 50;
-  padding: 18px 0;
+  padding: 5px 0;
   background: #2B1708;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(43, 33, 23, 0.08);
 }
 
 .site-header .nav {
-  min-height: 110px;
+  min-height: 78px;
   display: flex;
   align-items: center;
 }
@@ -268,13 +268,13 @@ footer a:focus {
 .brand-logo-link {
   display: flex;
   align-items: center;
-  height: 110px;
+  height: 78px;
   text-decoration: none;
 }
 
 .brand-logo {
   display: block;
-  height: 100%;
+  height: 110px;
   width: auto;
   object-fit: contain;
 }
