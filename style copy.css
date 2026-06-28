@@ -254,7 +254,7 @@ footer a:focus {
   top: 0;
   z-index: 50;
   padding: 18px 0;
-  background: #2B1708;
+  background: rgba(248, 243, 231, 0.78);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(43, 33, 23, 0.08);
 }
