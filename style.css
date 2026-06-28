@@ -294,21 +294,6 @@ footer a:focus {
   white-space: nowrap;
 }
 
-@media (max-width: 700px) {
-  .site-header .nav {
-    min-height: 64px;
-  }
-
-  .brand-logo-link {
-    height: 64px;
-  }
-
-  .brand-logo {
-    height: 100%;
-    max-width: 220px;
-  }
-}
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -367,6 +352,38 @@ footer a:focus {
 
   .nav-btn {
     padding: 10px 14px;
+  }
+}
+
+/* Header */
+@media (max-width: 900px) {
+  .site-header .nav {
+    height: auto;
+    min-height: 72px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .brand-logo-link {
+    height: 72px;
+  }
+
+  .brand-logo {
+    height: 72px;
+    max-width: 220px;
+  }
+
+  .nav-links {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    font-size: 0.78rem;
+    padding: 6px 8px;
+    border-radius: 999px;
+    line-height: 1.1;
   }
 }
 
