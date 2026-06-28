@@ -115,11 +115,13 @@ p, li {
 .btn-primary {
   background: var(--teal);
   color: white;
+  box-shadow: var(--shadow);
 }
 
 .btn-secondary {
   background: white;
   color: var(--text);
+  box-shadow: var(--shadow);
 }
 
 /* Cards grid */
