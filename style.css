@@ -294,6 +294,30 @@ footer a:focus {
   outline-offset: 2px;
 }
 
+/*
+  apple app store badge.
+*/
+
+.app-store-badge {
+  display: inline-flex;
+  padding: 14px;
+  line-height: 0;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.app-store-badge img {
+  display: block;
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+}
+
+.app-store-badge:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
