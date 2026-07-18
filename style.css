@@ -415,6 +415,29 @@ footer a:focus {
   border: 1px solid rgba(43, 33, 23, 0.14);
 }
 
+.video-frame {
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-subtitle {
+  max-width: 680px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  text-align: center;
+}
+
 /* Phone */
 @media (max-width: 900px) {
   .nav {
