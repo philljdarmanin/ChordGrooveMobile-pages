@@ -99,6 +99,14 @@ p, li {
   margin-bottom: 18px;
 }
 
+.teacher-section {
+  border: 2px solid rgba(0, 121, 107, 0.18);
+}
+
+.teacher-section h2 {
+  color: var(--teal);
+}
+
 .instructions-page {
   padding-top: 40px;
 }
