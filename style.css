@@ -106,6 +106,17 @@ p, li {
 .teacher-section h2 {
   color: var(--teal);
 }
+.teacher-footer-link {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.teacher-footer-link a {
+  color: #ffe8b5;
+  text-decoration: underline;
+}
 
 .instructions-page {
   padding-top: 40px;
