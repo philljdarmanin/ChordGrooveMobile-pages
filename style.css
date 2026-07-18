@@ -415,6 +415,10 @@ footer a:focus {
   border: 1px solid rgba(43, 33, 23, 0.14);
 }
 
+.video-section {
+  text-align: center;
+}
+
 .video-frame {
   max-width: 360px;
   margin: 0 auto;
